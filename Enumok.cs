@@ -13,6 +13,14 @@ namespace UveghazProjekt
 		ADMIN
 	}
 
+	enum Szenzor
+	{
+		VTULONTOZES,
+		SZARAZSAG,
+		BETEGSEG,
+		TAPANYAGHIANY
+	}
+
 	internal class Enumok
 	{
 	}

@@ -34,6 +34,16 @@ namespace UveghazProjekt
 			}
 		}
 
+		public override bool Equals(object obj)
+		{
+			obj = obj as NovenyFaj;
+			if(this.nev == ((NovenyFaj)(obj)).nev)
+			{
+				return true;
+			}
+			return false;
+		}
+
 		public override string ToString()
 		{
 			return $"{this.nev} nedvesseg: {this.nedvessegtartalom} egészség: {this.egeszsegszint} ideális egyedszam: {this.optimalissuruseg}";
