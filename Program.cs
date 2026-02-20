@@ -20,6 +20,9 @@
 			adattar.UjNoveny(new NovenyFaj("Cukkini", 5));
 			adattar.UjNoveny(new NovenyFaj("Spenót", 7));
 			adattar.NovenyekListazasa();
+			adattar.Uveghaz.Parcellazas();
+			adattar.Ultetes();
+			adattar.Uveghaz.AgyasKiiras();
 		}
     }
 }

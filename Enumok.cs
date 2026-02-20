@@ -8,7 +8,7 @@ namespace UveghazProjekt
 {
 	enum Szerepkor
 	{
-		KERTÉSZ,
+		KERTESZ,
 		TECHNIKUS,
 		ADMIN
 	}

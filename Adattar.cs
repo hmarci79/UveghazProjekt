@@ -8,11 +8,19 @@ namespace UveghazProjekt
 {
 	internal class Adattar
 	{
+		List<Kezelo> kezelok;
 		List<NovenyFaj> novenyek;
+		UveghazRacs uveghaz;
+
+		internal UveghazRacs Uveghaz { get => uveghaz; set => uveghaz = value; }
+
 		public Adattar()
 		{
+			this.kezelok = new List<Kezelo>() { new Kezelo("Gipsz Jakab","GJ", Szerepkor.KERTESZ) ,	new Kezelo("Aranka néni", "Ari", Szerepkor.ADMIN) };
 			novenyek = new List<NovenyFaj>();
+			this.uveghaz = new UveghazRacs(4);
 		}
+
 		public void UjNoveny(NovenyFaj noveny)
 		{
 			novenyek.Add(noveny);
@@ -23,6 +31,11 @@ namespace UveghazProjekt
 			{
 				Console.WriteLine(item);
 			}
+		}
+
+		public void Ultetes()
+		{
+			uveghaz.Ultetes(novenyek);
 		}
 	}
 }
